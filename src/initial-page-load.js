@@ -1,4 +1,4 @@
-import Picture1 from './src/anna-pelzer-IGfIGP5ONV0-unsplash.jpg' 
+import Picture1 from './anna-pelzer-IGfIGP5ONV0-unsplash.jpg' 
 
 function initialPageLoad() {
     const contentElement = document.getElementById("content");
@@ -7,8 +7,6 @@ function initialPageLoad() {
     const thePicture = new Image();
     thePicture.src = Picture1;
     contentElement.appendChild(thePicture);
-
-    return contentElement;
 }
 
-document.body.appendChild(initialPageLoad());
+export {initialPageLoad};
