@@ -10,3 +10,5 @@ function initialPageLoad() {
 
     return contentElement;
 }
+
+document.body.appendChild(initialPageLoad());
