@@ -17,3 +17,10 @@ h1 {
     justify-content: center;
     gap: 5px;
 }
+
+.tabButton {
+    color:yellow;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+}
