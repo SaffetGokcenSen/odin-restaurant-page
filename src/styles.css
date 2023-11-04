@@ -1,3 +1,7 @@
+body {
+    background-image: url("background.png");
+}
+
 .welcomeDiv {
     display: flex;
     justify-content: center;
