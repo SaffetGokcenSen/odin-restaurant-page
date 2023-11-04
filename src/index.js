@@ -1,20 +1,36 @@
+// initialPageLoad function is imported
 import {initialPageLoad} from "./initial-page-load.js";
 
+// initialPageLoad function is run
 initialPageLoad(); 
 
+// the content element is accessed
 const contentElement = document.getElementById("content"); 
+// the contact tab button is created
 const theContactTab = document.createElement("button"); 
+// the contact tab button text is defined
 theContactTab.textContent = "CONTACT";
+// the class of the contact tab button is set
 theContactTab.className = "tabButton";
+// the home tab button is created
 const theHomeTab = document.createElement("button");
+// the home tab button text is defined
 theHomeTab.textContent = "HOME";
+// the class of the home tab button is set
 theHomeTab.className = "tabButton";
+// the menu tab button is created
 const theMenuTab = document.createElement("button");
+// the menu tab button text is defined
 theMenuTab.textContent = "MENU"; 
+// the class of the menu tab button is set
 theMenuTab.className = "tabButton";
+// the div to hold the tab buttons is created
 const tabDiv = document.createElement("div"); 
-tabDiv.className = "tabDiv";
+// the class of the tab div is set
+tabDiv.className = "tabDiv"; 
+// the tab buttons are added to their div
 tabDiv.appendChild(theHomeTab);
 tabDiv.appendChild(theMenuTab);
 tabDiv.appendChild(theContactTab);
+// the tab div is added to the content
 contentElement.appendChild(tabDiv);
