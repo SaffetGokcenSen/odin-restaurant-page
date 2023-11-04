@@ -2,6 +2,10 @@ body {
     background-image: url("background.png");
 }
 
+h1 {
+    color:darkorange;
+}
+
 .welcomeDiv {
     display: flex;
     justify-content: center;
