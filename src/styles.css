@@ -15,4 +15,5 @@ h1 {
 .tabDiv {
     display: flex;
     justify-content: center;
+    gap: 5px;
 }
