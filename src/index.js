@@ -1,5 +1,7 @@
 // initialPageLoad function is imported
-import {initialPageLoad} from "./initial-page-load.js";
+import {initialPageLoad} from "./initial-page-load.js"; 
+// contactTab function is imported 
+import { contactTab } from "./contact-tab.js";
 
 // initialPageLoad function is run
 initialPageLoad(); 
