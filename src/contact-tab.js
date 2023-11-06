@@ -2,3 +2,6 @@
 function contactTab() {
     
 }
+
+// contactTab function is exported
+export {contactTab};
