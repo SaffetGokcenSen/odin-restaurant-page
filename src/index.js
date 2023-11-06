@@ -42,3 +42,12 @@ const tabContent = document.createElement('div');
 // the class of the tabContent is set
 tabContent.className = "tabContent";
 contentElement.appendChild(tabContent);
+
+function contactTabPressed() {
+    // the content of the tabContent div is erased
+    tabContent.style.display = "none";
+    // contact tab function is called
+    contactTab();
+}
+// catches the click on the contact tab
+theContactTab.addEventListener('click', contactTabPressed);
