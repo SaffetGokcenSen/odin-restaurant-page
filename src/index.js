@@ -36,3 +36,9 @@ tabDiv.appendChild(theMenuTab);
 tabDiv.appendChild(theContactTab);
 // the tab div is added to the content
 contentElement.appendChild(tabDiv);
+
+// the div which will hold the tab content is created
+const tabContent = document.createElement('div');
+// the class of the tabContent is set
+tabContent.className = "tabContent";
+contentElement.appendChild(tabContent);
