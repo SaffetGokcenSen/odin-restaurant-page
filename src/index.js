@@ -8,6 +8,8 @@ initialPageLoad();
 
 // the content element is accessed
 const contentElement = document.getElementById("content"); 
+// the fixed div is created
+const theFixedDiv = document.getElementById("fixedDiv"); 
 // the contact tab button is created
 const theContactTab = document.createElement("button"); 
 // the contact tab button text is defined
@@ -34,8 +36,8 @@ tabDiv.className = "tabDiv";
 tabDiv.appendChild(theHomeTab);
 tabDiv.appendChild(theMenuTab);
 tabDiv.appendChild(theContactTab);
-// the tab div is added to the content
-contentElement.appendChild(tabDiv);
+// the tabdiv is a child of the fixed div.
+theFixedDiv.appendChild(tabDiv);
 
 // the div which will hold the tab content is created
 const tabContent = document.createElement('div');
