@@ -4,6 +4,8 @@ import './styles.css' // the styling file is imported
 function initialPageLoad() {
     // the element with the content of the webpage is accessed
     const contentElement = document.getElementById("content");
+    // the element which contains a fixed appearance is accessed.
+    const fixedDivElement = document.getElementById("fixedDiv");
     // the div where the welcome header is written is created
     const welcomeDiv = document.createElement("div"); 
     // the class of the welcome div is set
@@ -14,8 +16,8 @@ function initialPageLoad() {
     welcomeHeader.textContent = "WELCOME TO THIS GREAT RESTAURANT";
     // the welcome message is added to the welcome div 
     welcomeDiv.appendChild(welcomeHeader);
-    // the welcome div is added to the content
-    contentElement.appendChild(welcomeDiv);
+    // the welcome div is added to the fixed div
+    fixedDivElement.appendChild(welcomeDiv);
 }
 
 // initialPageLoad function is exported to be used
