@@ -2,8 +2,6 @@ import './styles.css' // the styling file is imported
 
 // this function makes the initial page load
 function initialPageLoad() {
-    // the element with the content of the webpage is accessed
-    const contentElement = document.getElementById("content");
     // the element which contains a fixed appearance is accessed.
     const fixedDivElement = document.getElementById("fixedDiv");
     // the div where the welcome header is written is created
