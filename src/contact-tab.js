@@ -9,9 +9,10 @@ function contactTab() {
     tabContent.style.display = "flex";
     tabContent.style.justifyContent = "center";
     const addressDiv = document.createElement("div");
-    addressDiv.textContent = "Address: Restaurants District, Soup Street, 18/7 Lovelycountry";
+    addressDiv.textContent = "Address: Restaurants District, Soup Street, 18/7 Lovelycountry.";
     addressDiv.style.fontSize = "1.2rem";
     addressDiv.style.color = "yellowgreen";
+    addressDiv.style.fontWeight = "bold";
     tabContent.appendChild(addressDiv);
 }
 
