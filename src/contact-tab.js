@@ -7,6 +7,7 @@ function contactTab() {
     const tabContent = tabContentArray[0];
     // tabContent is a flex container
     tabContent.style.display = "flex";
+    tabContent.style.flexDirection = "column";
     tabContent.style.justifyContent = "center";
     // an address div is created
     const addressDiv = document.createElement("div");
