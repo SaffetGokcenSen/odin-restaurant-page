@@ -11,20 +11,17 @@ function contactTab() {
     tabContent.style.justifyContent = "center";
     tabContent.style.alignItems = "center";
     tabContent.style.gap = "1.0rem";
+    tabContent.style.fontSize = "1.2rem";
+    tabContent.style.color = "yellowgreen";
+    tabContent.style.fontWeight = "bold";
     // an address div is created
     const addressDiv = document.createElement("div");
     addressDiv.textContent = "Address: Restaurants District, Soup Street, 18/7 Lovelycountry.";
-    addressDiv.style.fontSize = "1.2rem";
-    addressDiv.style.color = "yellowgreen";
-    addressDiv.style.fontWeight = "bold";
     // the address div is added
     tabContent.appendChild(addressDiv); 
     // an e-mail div is created
     const emailDiv = document.createElement("div");
     emailDiv.textContent = "E-mail: great.restaurant@mailserver.com";
-    emailDiv.style.fontSize = "1.2rem";
-    emailDiv.style.color = "yellowgreen";
-    emailDiv.style.fontWeight = "bold";
     // the e-mail div is added
     tabContent.appendChild(emailDiv);
 }
