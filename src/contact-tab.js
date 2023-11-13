@@ -9,6 +9,8 @@ function contactTab() {
     tabContent.style.display = "flex";
     tabContent.style.flexDirection = "column";
     tabContent.style.justifyContent = "center";
+    tabContent.style.alignItems = "center";
+    tabContent.style.gap = "1.0rem";
     // an address div is created
     const addressDiv = document.createElement("div");
     addressDiv.textContent = "Address: Restaurants District, Soup Street, 18/7 Lovelycountry.";
