@@ -23,7 +23,12 @@ function contactTab() {
     const emailDiv = document.createElement("div");
     emailDiv.textContent = "E-mail: great.restaurant@mailserver.com";
     // the e-mail div is added
-    tabContent.appendChild(emailDiv);
+    tabContent.appendChild(emailDiv); 
+    // a gsm div is created 
+    const gsmDiv = document.createElement("div"); 
+    gsmDiv.textContent = "Gsm: 34290342";
+    // the gsm div is added 
+    tabContent.appendChild(gsmDiv);
 }
 
 // contactTab function is exported
