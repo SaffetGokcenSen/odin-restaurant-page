@@ -31,6 +31,11 @@ h1 {
     font-size: 1.2rem;
 }
 
+.tabButton:hover {
+    background-color: black;
+    color: yellow;
+}
+
 .tabcontent {
     
 }
