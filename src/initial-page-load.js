@@ -11,7 +11,7 @@ function initialPageLoad() {
     // the welcome header is created
     const welcomeHeader = document.createElement("h1");
     // the welcome message is defined
-    welcomeHeader.textContent = "WELCOME TO THIS GREAT RESTAURANT";
+    welcomeHeader.textContent = "WELCOME TO ŞEN'S VEGAN HEAVEN!";
     // the welcome message is added to the welcome div 
     welcomeDiv.appendChild(welcomeHeader);
     // the welcome div is added to the fixed div
