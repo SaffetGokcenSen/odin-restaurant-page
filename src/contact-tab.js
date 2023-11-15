@@ -21,7 +21,7 @@ function contactTab() {
     tabContent.appendChild(addressDiv); 
     // an e-mail div is created
     const emailDiv = document.createElement("div");
-    emailDiv.textContent = "E-mail: great.restaurant@mailserver.com";
+    emailDiv.textContent = "E-mail: vegan.heaven@mailserver.com";
     // the e-mail div is added
     tabContent.appendChild(emailDiv); 
     // a gsm div is created 
