@@ -1,7 +1,9 @@
 // initialPageLoad function is imported
 import {initialPageLoad} from "./initial-page-load.js"; 
 // contactTab function is imported 
-import { contactTab } from "./contact-tab.js";
+import { contactTab } from "./contact-tab.js"; 
+// homeTab function is imported 
+import { homeTab } from "./home-tab.js";
 
 // initialPageLoad function is run
 initialPageLoad(); 
@@ -45,14 +47,31 @@ const tabContent = document.createElement('div');
 tabContent.className = "tabContent";
 contentElement.appendChild(tabContent);
 
-const controller = new AbortController();
+const once = {
+    once: true,
+};
 
 function contactTabPressed() {
     // the content of the tabContent div is erased
-    tabContent.style.display = "none";
+    while (tabContent.firstChild) {
+        tabContent.removeChild(tabContent.firstChild);
+    }
     // contact tab function is called
     contactTab();
-    controller.abort();
+    theHomeTab.addEventListener('click', homeTabPressed, once);
 }
+
+function homeTabPressed() {
+    // the content of the tabContent div is erased
+    while (tabContent.firstChild) {
+        tabContent.removeChild(tabContent.firstChild);
+    }
+    // contact tab function is called
+    homeTab();
+    theContactTab.addEventListener('click', contactTabPressed, once);
+}
+
 // catches the click on the contact tab
-theContactTab.addEventListener('click', contactTabPressed, { signal: controller.signal });
+theContactTab.addEventListener('click', contactTabPressed, once); 
+// catches the click on the home tab
+theHomeTab.addEventListener('click', homeTabPressed, once);
