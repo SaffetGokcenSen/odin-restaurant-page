@@ -16,7 +16,12 @@ function homeTab() {
     tabContent.style.fontWeight = "bold"; 
     // restauran name div is created 
     const introductionDiv = document.createElement("div");
-    introductionDiv.textContent = "Şen's Vegan Heaven offers the best vegan menu."; 
+    introductionDiv.style.width = "33vw";
+    const theText = `Şen's Vegan Heaven offers the best vegan menu. Fresh, 
+    healthy and delicious food look forward to you. Of course, there are tasty 
+    drinks, as well. Do not hesitate to come to the address in the contact tab 
+    whenever you request a really great vegan menu.`;
+    introductionDiv.textContent = theText; 
     tabContent.appendChild(introductionDiv);
 }
 
