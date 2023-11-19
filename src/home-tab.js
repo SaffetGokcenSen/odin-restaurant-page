@@ -39,7 +39,26 @@ function homeTab() {
     // the introduction title and text are added to the dom
     introductionDiv.appendChild(introTitle); 
     introductionDiv.appendChild(introText);
-    tabContent.appendChild(introductionDiv);
+    tabContent.appendChild(introductionDiv); 
+    // the div to hold the working hours is created 
+    const workHoursDiv = document.createElement("div"); 
+    // the styling of the working hours div
+    workHoursDiv.style.width = "33vw";
+    workHoursDiv.style.display = "flex"; 
+    workHoursDiv.style.flexDirection = "column"; 
+    workHoursDiv.style.gap = "7px";
+    // the div to hold the working hour title 
+    const workHourTitle = document.createElement("div"); 
+    workHourTitle.textContent = "WORKING HOURS"; 
+    workHoursDiv.appendChild(workHourTitle); 
+    // the div to hold the working hours 
+    const workingHours = document.createElement("div"); 
+    workingHours.textContent = `From 9:00 am to 7:00 pm throughout the week.`; 
+    // the working hours text alignment is set
+    workingHours.style.textAlign = "justify"; 
+    // the working hours info is added to the dom
+    workHoursDiv.appendChild(workingHours); 
+    tabContent.appendChild(workHoursDiv);
 }
 
 export {homeTab};
