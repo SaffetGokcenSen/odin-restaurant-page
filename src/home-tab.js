@@ -17,12 +17,20 @@ function homeTab() {
     // restauran name div is created 
     const introductionDiv = document.createElement("div");
     introductionDiv.style.width = "33vw";
+    introductionDiv.style.display = "flex"; 
+    introductionDiv.style.flexDirection = "column"; 
+    introductionDiv.style.gap = "7px";
+    const introTitle = document.createElement("div"); 
+    introTitle.textContent = "ORGANIC INTRO"; 
+    const introText = document.createElement("div");
     const theText = `Şen's Vegan Heaven offers the best vegan menu. Fresh, 
     healthy and delicious food look forward to you. Of course, there are tasty 
     drinks, as well. Do not hesitate to come to the address in the contact tab 
     whenever you request a really great vegan menu.`;
-    introductionDiv.textContent = theText; 
-    introductionDiv.style.textAlign = "justify";
+    introText.textContent = theText; 
+    introText.style.textAlign = "justify"; 
+    introductionDiv.appendChild(introTitle); 
+    introductionDiv.appendChild(introText);
     tabContent.appendChild(introductionDiv);
 }
 
