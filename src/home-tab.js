@@ -22,6 +22,7 @@ function homeTab() {
     drinks, as well. Do not hesitate to come to the address in the contact tab 
     whenever you request a really great vegan menu.`;
     introductionDiv.textContent = theText; 
+    introductionDiv.style.textAlign = "justify";
     tabContent.appendChild(introductionDiv);
 }
 
