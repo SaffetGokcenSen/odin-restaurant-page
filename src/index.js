@@ -47,6 +47,7 @@ const tabContent = document.createElement('div');
 tabContent.className = "tabContent";
 contentElement.appendChild(tabContent);
 
+// the option for the event listeners
 const once = {
     once: true,
 };
@@ -57,7 +58,8 @@ function contactTabPressed() {
         tabContent.removeChild(tabContent.firstChild);
     }
     // contact tab function is called
-    contactTab();
+    contactTab(); 
+    // the event listener for the home tab is created
     theHomeTab.addEventListener('click', homeTabPressed, once);
 }
 
@@ -67,7 +69,8 @@ function homeTabPressed() {
         tabContent.removeChild(tabContent.firstChild);
     }
     // contact tab function is called
-    homeTab();
+    homeTab(); 
+    // the event listener for the contac tab is created 
     theContactTab.addEventListener('click', contactTabPressed, once);
 }
 
