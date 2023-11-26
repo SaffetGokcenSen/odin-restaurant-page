@@ -4,6 +4,8 @@ import {initialPageLoad} from "./initial-page-load.js";
 import { contactTab } from "./contact-tab.js"; 
 // homeTab function is imported 
 import { homeTab } from "./home-tab.js";
+// menuTab function is imported 
+import { menuTab } from "./menu-tab.js";
 
 // initialPageLoad function is run
 initialPageLoad(); 
@@ -60,7 +62,9 @@ function contactTabPressed() {
     // contact tab function is called
     contactTab(); 
     // the event listener for the home tab is created
-    theHomeTab.addEventListener('click', homeTabPressed, once);
+    theHomeTab.addEventListener('click', homeTabPressed, once); 
+    // catches the click on the menu tab
+    theMenuTab.addEventListener('click', menuTabPressed, once);
 }
 
 function homeTabPressed() {
@@ -70,11 +74,28 @@ function homeTabPressed() {
     }
     // contact tab function is called
     homeTab(); 
-    // the event listener for the contac tab is created 
-    theContactTab.addEventListener('click', contactTabPressed, once);
+    // the event listener for the contact tab is created 
+    theContactTab.addEventListener('click', contactTabPressed, once); 
+    // catches the click on the menu tab
+    theMenuTab.addEventListener('click', menuTabPressed, once);
+} 
+
+function menuTabPressed() {
+    // the content of the tabContent div is erased
+    while (tabContent.firstChild) {
+        tabContent.removeChild(tabContent.firstChild);
+    }
+    // menu tab function is called
+    menuTab(); 
+    // the event listener for the contact tab is created 
+    theContactTab.addEventListener('click', contactTabPressed, once); 
+    // the event listener for the home tab is created
+    theHomeTab.addEventListener('click', homeTabPressed, once);
 }
 
 // catches the click on the contact tab
 theContactTab.addEventListener('click', contactTabPressed, once); 
 // catches the click on the home tab
-theHomeTab.addEventListener('click', homeTabPressed, once);
+theHomeTab.addEventListener('click', homeTabPressed, once); 
+// catches the click on the menu tab
+theMenuTab.addEventListener('click', menuTabPressed, once);
