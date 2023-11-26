@@ -1,3 +1,8 @@
+// the images for the dishes are imported
+import Dish1 from './dish1.png'; 
+import Dish2 from './dish2.png'; 
+import Dish3 from './dish3.png'; 
+
 // the function to implement the menu tab
 function menuTab() {
     // access to the content element
